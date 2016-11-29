@@ -1,0 +1,58 @@
+body {
+  padding-top: 50px;
+}
+
+input:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn-cta {
+  transition: all 0.2s ease;
+  background: #f4f4f4;
+  border-width: 0px !important;
+  box-shadow:
+    0 -2px 0 rgba(0,0,0,0.12) inset,
+    0 0 2px rgba(0,0,0,0.08),
+    0 4px 6px rgba(0,0,0,0.08),
+    0 12px 16px rgba(0,0,0,0.08);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+  padding: 15px 50px !important;
+  &:hover {
+    box-shadow:
+      0 -2px 0 rgba(0,0,0,0.12) inset,
+      0 0 2px rgba(0,0,0,0.08),
+      0 12px 16px rgba(0,0,0,0.08),
+      0 16px 32px rgba(0,0,0,0.08),
+      0 24px 36px rgba(0,0,0,0.08);
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+.note-editable {
+  min-height: 130px;
+}
+
+.breadcrumb {
+  margin-bottom: 7px !important;
+}
+
+.post-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  background: #252525;
+  color: #ffffff !important;
+  margin-bottom: 0 !important;
+}

@@ -1,0 +1,38 @@
+.jumbotron-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(-45deg, #306ab2 0%, #00e1ed 70%, #00e1ed 70%);
+  position: relative;
+  color: #F1F2F4 !important;
+  margin-bottom: 0 !important;
+  h1 {
+    font-family: "acier-bat-noir", sans-serif;
+  }
+  p {
+    font-size: 24px !important;
+    .subtitle {
+      padding: 0 2px;
+    }
+  }
+}
+
+.jumbotron-course {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  color: #ffffff !important;
+  margin-bottom: 0 !important;
+  text-shadow:
+  -1px -1px 0 #252525,
+  1px -1px 0 #252525,
+  -1px 1px 0 #252525,
+  1px 1px 0 #252525;
+}

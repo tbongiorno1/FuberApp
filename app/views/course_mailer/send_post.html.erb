@@ -1,0 +1,35 @@
+<style media="screen">
+  .top {
+    padding-top: 45px;
+  }
+</style>
+<div class="container">
+  <div class="container">
+    <div class="navbar-header">
+      <h1>FuberApp</h1>
+    </div>
+  </div>
+  <div class="container post">
+    <div class="row row-padded">
+      <div class="well col-md-8 col-md-offset-2">
+        <h3 class="post-title"><%= @post.name %></h3>
+        <p class="post-meta text-muted">
+          <span>Post <%= @post.id %></span>
+          <span>Published by <a href="#"><%= @post.admin.full_name %></a>.</span>
+        </p>
+        <div class="post-content text-huge">
+          <%= @post.content.html_safe %>
+          <br>
+          <p>
+            <%= link_to "Open in browser", course_post_url(@post.course.id, @post) %>
+          </p>
+        </div>
+      </div>
+      <div class="top">
+        <p class="small text-muted">
+          &copy; 2016 FuberApp. All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

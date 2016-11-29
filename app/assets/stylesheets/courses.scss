@@ -1,0 +1,68 @@
+.img-profile {
+  width: 35px;
+  height: 35px;
+}
+
+.media-heading {
+  padding-top: 10px;
+}
+
+.search-input {
+  border-radius: 25px !important;
+  margin-top: 25px;
+}
+
+.jumbotron-search {
+  padding-top: 5rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.author {
+  padding-top: 45px;
+}
+
+.course-tagline {
+  padding-top: 25px;
+}
+
+.course-date {
+  margin-top: 25px;
+  margin-left: 5rem;
+}
+
+.course-img-profile {
+  width: 42px;
+  height: 42px;
+  border: 2px solid white;
+}
+
+.author-heading {
+  padding-top: 0 !important;
+}
+
+.course-description {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #252525;
+  position: relative;
+  color: #F1F2F4 !important;
+  margin-bottom: 0 !important;
+  font-size: 2em !important;
+}
+
+.course-sign-up {
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #F1F2F4;
+  color: #252525;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}

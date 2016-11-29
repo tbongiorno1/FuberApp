@@ -1,0 +1,53 @@
+<% if admin_signed_in? %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="page-header">
+          <h2>Settings</h2>
+        </div>
+        <%= render partial: "admins/partials/sidenav" %>
+      </div>
+      <div class="col-lg-9">
+        <div class="page-header">
+          <ol class="breadcrumb">
+            <li><%= link_to "Courses", courses_path %></li>
+            <li><%= link_to @post.course.name, @post.course %></li>
+            <li class="active"><%= @post.name %></li>
+          </ol>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="http://placehold.it/200x200" class="img-responsive img-thumbnail" alt="Placeholder" />
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>Name: <%= @post.name %></li>
+                  <li>Content: <%= truncate(@post.content.html_safe, length: 446, omission: '... (continued)') %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="from-group text-center">
+          <ul class="list-inline">
+            <li><%= link_to 'Edit', edit_course_post_path(@course) %></li>
+            <li><%= link_to 'Back', course_path(@course) %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <section class="post-view">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h2><%= @post.name %></h2>
+          <p class="lead"><%= @post.content.html_safe %></p>
+        </div>
+      </div>
+    </div>
+  </section>
+<% end %>

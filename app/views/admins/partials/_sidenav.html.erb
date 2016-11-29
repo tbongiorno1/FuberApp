@@ -1,0 +1,16 @@
+<div class="panel panel-default">
+  <div class="list-group">
+    <%= link_to courses_path, class: "list-group-item #{is_active?(courses_path)}" do %>
+      <%= fa_icon "th-list", text: "Your Courses" %>
+    <% end %>
+    <%= link_to new_course_path, class: "list-group-item #{is_active?(new_course_path)}" do %>
+      <%= fa_icon "plus", text: "Create New Course" %>
+    <% end %>
+    <%= link_to edit_admin_registration_path, class: "list-group-item #{is_active?(edit_admin_registration_path)}" do %>
+      <%= fa_icon "cog", text: "Account Settings" %>
+    <% end %>
+    <%= link_to subscribers_path, class: "list-group-item #{is_active?(subscribers_path)}" do %>
+      <%= fa_icon "users", text: "Subscribers" %>
+    <% end %>
+  </div>
+</div>

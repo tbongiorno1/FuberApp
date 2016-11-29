@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-search">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Find your course</h2>
+        <p class="lead">
+          Can't find what you're looking for? Create your own!
+        </p>
+        <%= search_form_for @q, class: "col-lg-6 col-lg-offset-3" do |f| %>
+          <%= f.search_field :name_or_tagline_or_description_or_admin_name_or_admin_lastname_cont, class: "form-control search-input input-lg", placeholder: "Search courses..." %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

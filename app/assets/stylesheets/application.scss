@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ // *= require_tree .
+ // *= require_self
+ *= require animate
+ */
+
+ $font-family-base:                                        "proxima-nova-soft", sans-serif !default;
+ $text-color:                                                                      #545d63 !default;
+ $navbar-inverse-bg:                                                           transparent !default;
+ $navbar-inverse-toggle-hover-bg:                                              transparent !default;
+ $navbar-inverse-toggle-icon-bar-bg:                                               #ffffff !default;
+ $navbar-inverse-toggle-border-color:                                          transparent !default;
+ $navbar-inverse-link-color:                                                       #ffffff !default;
+ $navbar-inverse-link-hover-color:                                    darken(#ffffff, 15%) !default;
+ $btn-success-bg:                                                                  #1CB78C !default;
+ $btn-success-border:                                                              #1CB78C !default;
+ $btn-default:                                                                     #ffffff !default;
+ $btn-default-border:                                                              #ffffff !default;
+ $border-radius-base:                                                                    0 !default;
+ $border-radius-large:                                                                   0 !default;
+ $border-radius-small:                                                                   0 !default;
+ $input-border:                                                                    #787985 !default;
+ $input-border-focus:                                                              #1B81D3 !default;
+ $growlyflash-top:                                                                    55px !default;
+ $growlyflash-side:                                                                    5px !default;
+ $growlyflash-width:                                                                  auto !default;
+ $growlyflash-zindex:                                                                 9999 !default;
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "growlyflash";
+ @import "font-awesome";
+ @import "summernote";
